@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Toaster } from 'react-hot-toast'
+import { Route, Routes } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Footer } from 'components/Footer'
+import { TailwindIndicator } from 'components/TailwindIndicator'
+import { Book } from 'pages/Book/Book'
+import { Dashboard } from 'pages/Dashboard/Dashboard'
+
+const App: React.FC = () => {
+    return (
+        <div className="flex min-h-screen flex-col justify-between bg-white">
+            <Toaster />
+            <div className="container">
+                <Routes>
+                    <Route path="/" element={<Dashboard />} />
+                    <Route path="/book" element={<Book />} />
+                </Routes>
+            </div>
+            <Footer name="Oleshkooo" link="https://github.com/Oleshkooo" />
+            <TailwindIndicator />
+        </div>
+    )
 }
 
-export default App;
+export default App

@@ -1,0 +1,14 @@
+{
+  "books": [
+    {
+      "isbn": 123,
+      "title": "SomeTitle",
+      "author": "SomeAuthor",
+      "category": "Mystery",
+      "status": "active",
+      "createdAt": "2023-05-30T18:46:47.153Z",
+      "modifiedAt": "2023-05-30T18:46:55.235Z",
+      "id": 1
+    }
+  ]
+}
