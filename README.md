@@ -14,13 +14,13 @@ yarn start:dev
 
 ### Or use 2 terminals
 
-1. Run server
+1. Run server (terminal 1)
 
 ```
 yarn server
 ```
 
-2. Run website in development mode
+2. Run website in development mode (terminal 2)
 
 ```
 yarn dev
@@ -52,13 +52,13 @@ yarn start:prod
 yarn build
 ```
 
-2. Run server
+2. Run server (terminal 1)
 
 ```
 yarn server
 ```
 
-3. Run website
+3. Run website in production mode (terminal 2)
 
 ```
 yarn dev
